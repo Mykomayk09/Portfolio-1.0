@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body{
+    margin: 0;
+    background-color: black;
+}
+#container{
+    height: 100vh;
+}
+.navbar{
+    background-color: black;
+    position: fixed;
+    padding: 20px 20px;
+    margin-top: -15%;
+    box-sizing: border-box;
+    width: 100%;
+}
+span{
+    background: rgb(204,30,102);
+    background: linear-gradient(90deg, rgba(204,30,102,1) 0%, rgba(94,17,89,1) 48%, rgba(34,9,51,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: inconsolata;
+    font-size: 25px;
+    font-weight: 700;
+}
+button{
+    margin-left: 70%;
+    background: transparent;
+    color: white;
+    border: 1px solid #fef6f6;
+    border-radius: 5px;
+}
+h1{
+    background: rgb(204,30,102);
+    background: linear-gradient(90deg, rgba(204,30,102,1) 0%, rgba(94,17,89,1) 48%, rgba(34,9,51,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: inconsolata;    
+    font-weight: bold;
+    font-size: 4rem;
+    margin: 15% 0 0 5%;
+}
+#container h3{
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fef6f6;
+    margin: 1% 0 0 5%;
+    width: 18ch;
+    overflow: hidden;
+    border-right: 2px solid rgb(94,17,89);
+    white-space: nowrap;
+    animation: typing 2s steps(22),
+                blink .7s step-end infinite alternate;
+}
+@keyframes typing {
+    from{width: 0}
+    to {width: 25%;}
+}
+@keyframes blink{
+    50%{border-color: transparent
+    }
+}
+p{
+    font-family: inconsolata;
+    font-size: 1.2rem;
+    font-weight:lighter;
+    color: white;
+    margin: 1% 0 0 5%;
+    line-height: 25px;
+    width: 45%;
+    text-align: justify;
+}
+button{
+    border: none;
+    padding: 5px 10px;
+    font-weight:lighter;
+    cursor: pointer;
+}
+button a{
+    text-decoration: none;
+}
+.linkedin{
+    border: 1px solid #fef6f6;
+    border-radius: 5px;
+    margin: 1% 0 0 5%;
+    background-color: transparent;
+}
+
+.linkedin a{
+    color: #fef6f6;
+}
+.resume{
+    border: 1px solid #282a3a;
+    border-radius: 5px;
+    margin: 1% 0 0 1%;
+    background-color: #fef6f6;
+}
+.resume a{
+    color: #282a3a;
+}
+button:hover{
+    background-color: #b8adb8;
+}
+#technologies{
+    display: inline-block;
+    width: 20%;
+    height: 10vh;
+    box-sizing: border-box;
+}
+#technologies h3{
+    font-family: incosolata;
+    font-size: 2.5rem;
+    background: rgb(204,30,102);
+    background: linear-gradient(90deg, rgba(204,30,102,1) 0%, rgba(94,17,89,1) 48%, rgba(34,9,51,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: -70% 0 0 20%;
+}
+#technologies h3::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    margin-left: 10%;
+    background-color: #282a3a;
+    transition: width .3s;
+}
+#technologies h3:hover::after{
+    width: 500%;
+}
+#technologies .html{
+    border-radius: 5px;
+    border-radius: 5px;
+    background: rgba(40,42,58,0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(40,42,58,0.25);
+    width: 40%;
+    height: 5vh;
+    margin: 9.5% 50%;
+}
+#technologies .css{
+    border-radius: 5px;
+    background: rgba(40,42,58,0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(40,42,58,0.25);
+    padding: 0 5px;
+    display: flex;
+    width: 30%;
+    height: 5vh;
+    margin: -22% 100%;
+}
+#technologies .css:hover{
+    border: 1px solid rgba(94,17,89,1);
+}
+#technologies .js{
+    border-radius: 5px;
+    border-radius: 5px;
+    background: rgba(40,42,58,0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(40,42,58,0.25);
+    padding: 0 5px;
+    display: flex;
+    width: 50%;
+    height: 5vh;
+    margin: 9.1% 140%;
+}
+#technologies .js:hover{
+    border: 1px solid rgba(94,17,89,1);
+}
+#technologies .github{
+    border-radius: 5px;
+    border-radius: 5px;
+    background: rgba(40,42,58,0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(40,42,58,0.25);
+    padding: 0 5px;
+    display: flex;
+    width: 40%;
+    height: 5vh;
+    margin: -21.8% 200%;
+}
+#technologies > .html img{
+    margin: 9% 0 0 5%;
+    padding: 0 5px;
+    width: 15px;
+    height: 15px;
+}
+.html h6{
+    margin: -21.7% 0 0 10%;
+    color: #878181;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1rem;
+    padding: 0 0 35px 0;
+    text-align: center;
+}
+#technologies > .css img{
+    margin: .4% 0 0 5%;
+    padding: 5px 0;
+    width: 20px;
+    height: 20px;
+}
+.css h6{
+    margin: 8.9% 0 0 10%;
+    color: #878181;
+    font-family: sans-serif;
+    font-size: 1rem;
+    padding: 0 0 35px 0;
+    text-align: center;
+}
+#technologies > .js img{
+    margin: 2.5% 0 0 5%;
+    padding: 5px 0;
+    width: 15px;
+    height: 15px;
+}
+.js h6{
+    margin: 3.9% 0 0 5%;
+    color: #878181;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1rem;
+    padding: 0 0 35px 0;
+    text-align: center;
+}
+#technologies > .github img{
+    margin: 3% 0 0 -80%;
+    padding: 5px 0;
+    width: 15px;
+    height: 15px;
+}
+.github h6{
+    margin: 4.5% 0 0 30%;
+    color: #878181;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1rem;
+    padding: 0 0 35px 0;
+    text-align: center;
+}
+
+
+
+
+
+/*.linkedin::before{
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    width: calc(100% + 100%);
+    height: calc(100% - 12px);
+    background: #fef6f6;
+    transition: 0.5s ease-in-out;
+    transform: scaleY(1);
+}
+.linkedin:hover::before{
+    transform: scaleX(0);
+}
+*/
+/*display: inline-block;
+    width: 20%;
+    height: 10vh;
+    box-sizing: border-box;
+    */
